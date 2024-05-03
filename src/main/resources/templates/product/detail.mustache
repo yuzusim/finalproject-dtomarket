@@ -132,9 +132,9 @@
 
                         <!--수정,삭제 버튼부분-->
                         <div class="d-flex" style="justify-content: flex-end">
-                            <span><a href="/product/1/update-form" class="btn btn-mint">수정가기</a></span>
+                            <span><a href="/product/{{id}}/update-form" class="btn btn-mint">수정가기</a></span>
                             <span class="ml-20">
-                                <form action="/product/1/delete" method="post">
+                                <form action="/product/{{id}}/delete" method="post">
                                     <button class="btn btn-mint">삭제하기</button>
 	                            </form>
                             </span>
@@ -145,17 +145,14 @@
                 </div>
             </div>
         </div>
-
     <!--판매자 로그인시-->
 
-<!--비회원 로그인시 -->
-
-
+<!--비회원 로그인시-->
 
 </div>
 <!--상품 상세보기 페이지 완료-->
 
-<!--지우면 구매수량 안올라 갑니다. 구매 수량만 올리는 이벤트일뿐 변수 값 해당 머스태치에 뿌려야 됩니다.-->
+<!--지우면 안됩니다. 수량만 올라가는 이벤트 머스태치에는 변수값 바꿔서 뿌리고 그럼 parseInt 변수값 넣어주세요 -->
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
@@ -182,5 +179,6 @@
         $(".remaining-qty").text("재고 수량: " + remainingQty);
     });
 </script>
+
 
 {{> layout/footer}}
