@@ -17,15 +17,7 @@ public class OrderService {
     private final OrderJPARepository orderJPARepository;
     private final CartJPARepository cartJPARepository;
 
-    //주문서 (카트에 있는거 들고 와서 뿌림 .. 카트를 DI)
-//    @Transactional
-//    public List<CartResponse.ListDTO> findByCartIdAndUserIdAndStatus(Integer userId) {
-//        // 저장된 리스트를 사용자 ID와 카트 ID를 기준으로 조회
-//        List<CartResponse.ListDTO> cartList = orderJPARepository.findByUserIdAndStatus(userId);
-//        cartJPARepository.updateCheckedById();
-//        // 조회된 주문 리스트를 DTO로 변환
-//        return cartList;
-//    }
+
 
     @Transactional
     public List<CartResponse.ListDTO> findByUserIdAndChecked(Integer userId, Boolean isChecked) {
