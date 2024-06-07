@@ -5,7 +5,8 @@
 
 ## 2. 발표 자료
 ![image](https://github.com/yuzusim/finalproject-dtomarket/assets/153695703/9d5e33d0-87b6-4fbe-a243-b3f4f6c21f8d)
-[5조.pdf](https://github.com/yuzusim/finalproject-dtomarket/files/15412619/5.pdf)
+[5조.pdf](https://github.com/user-attachments/files/15736619/5.pdf)
+
 
 ## 3. 팀 소개
 ## 3-1. 디자인
